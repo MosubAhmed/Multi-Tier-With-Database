@@ -92,48 +92,50 @@ Provide the required variables (e.g., ssh_key_name).
 
 After provisioning, Terraform will output the EKS cluster ID, node group ID, VPC ID, and subnet IDs.
 
+1. Initialize Terraform:
+   - terraform init
+
+3. Apply the Terraform configuration:
+   - terraform apply
+  
+4. After provisioning, Terraform will output the EKS cluster ID, node group ID, VPC ID, and subnet IDs.
+
+
 2. Configure Jenkins
-Set up the following credentials in Jenkins:
-
-Docker Hub: For pushing Docker images.
-
-Kubernetes Token: For deploying to the EKS cluster.
-
-Nexus Credentials: For publishing Maven artifacts.
-
-Configure the Jenkins pipeline to use the correct tools (e.g., Maven, Docker, SonarQube scanner).
-
-3. Run the Pipeline
-Trigger the Jenkins pipeline manually or via a Git webhook.
-
-Monitor the pipeline stages in the Jenkins dashboard.
-
+  1.  Set up the following credentials in Jenkins:
+      -  Docker Hub: For pushing Docker images.
+      -  Kubernetes Token: For deploying to the EKS cluster.    
+      -  Nexus Credentials: For publishing Maven artifacts.
+  
+  2. Configure the Jenkins pipeline to use the correct tools (e.g., Maven, Docker, SonarQube scanner).
+  3. Run the Pipeline:
+     - Trigger the Jenkins pipeline manually or via a Git webhook.
+     - Monitor the pipeline stages in the Jenkins dashboard.
+    
 Outputs
-After running terraform apply, the following outputs will be displayed:
+  After running terraform apply, the following outputs will be displayed:
+  -  Cluster ID: The ID of the EKS cluster.
+  -  Node Group ID: The ID of the EKS node group.
+  -  VPC ID: The ID of the VPC.
+  -  Subnet IDs: The IDs of the subnets.
 
-Cluster ID: The ID of the EKS cluster.
-
-Node Group ID: The ID of the EKS node group.
-
-VPC ID: The ID of the VPC.
-
-Subnet IDs: The IDs of the subnets.
 
 Contributing
-Contributions are welcome! Please follow these steps:
-
-Fork the repository.
-
-Create a new branch for your feature or bugfix.
-
-Submit a pull request with a detailed description of your changes.
+-  Contributions are welcome! Please follow these steps:
+-  Fork the repository.
+-  Create a new branch for your feature or bugfix.
+-  Submit a pull request with a detailed description of your changes.
 
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+- This project is licensed under the MIT License. See the LICENSE file for details.
+
 
 Acknowledgments
-Terraform for infrastructure as code.
+-  Terraform for infrastructure as code.
+-  Jenkins for CI/CD automation.
+-  Amazon EKS for managed Kubernetes.
 
-Jenkins for CI/CD automation.
 
-Amazon EKS for managed Kubernetes.
+
+
+
