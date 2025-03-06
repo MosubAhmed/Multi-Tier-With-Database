@@ -79,8 +79,8 @@ Before using this project, ensure you have the following:
 ### **1. Provision Infrastructure with Terraform**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/MosubAhmed/Multi-Tier-With-Database.git
+   
 Initialize Terraform:
 
 bash
