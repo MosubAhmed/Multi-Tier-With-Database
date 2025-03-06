@@ -57,6 +57,9 @@ The Jenkins pipeline automates the following steps:
 11. **Deploy to K8s**: Deploys the application to the EKS cluster.
 12. **Verify Deployment**: Checks the status of Pods and Services.
 
+![Screenshot From 2025-03-06 18-55-08](https://github.com/user-attachments/assets/48a8c8e1-8b80-4efb-b853-b1ef0a0f7dfb)
+
+
 ---
 
 ## **Prerequisites**
