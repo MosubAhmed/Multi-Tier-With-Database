@@ -36,7 +36,7 @@ spec:
   selector:
     app: mysql
 ---
-#java app deployment
+# Java app deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -54,9 +54,9 @@ spec:
       containers:
         - name: bankapp
           image: mosub/bankapp:latest
-         ports:
-          - containerPort: 8080
-            name: mysql
+          ports:
+            - containerPort: 8080
+              name: mysql
           env:
           - name: SPRING_DATASOURCE_URL
             value: jdbc:mysql://mysql-service:3306/bankappdb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
